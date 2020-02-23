@@ -6,6 +6,7 @@ Using Bash, please run the file `init.sh`
 
 ## Dependencies:
 - Linux
+- git
 - Root permissions
 - Python3
 - Pip3
