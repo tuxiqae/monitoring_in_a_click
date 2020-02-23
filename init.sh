@@ -9,7 +9,7 @@ read prom_retention
 
 sudo usermod -aG docker $(whoami)
 git clone https://github.com/tuxiqae/monitoring_in_a_click.git
-cd outbrain
+cd monitoring_in_a_click
 pip3 install -r requirements.txt
 python3 main.py --grafana-version "${graf_ver}" --prometheus-version "${prom_ver}" --retention "${prom_retention}"
 
