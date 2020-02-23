@@ -1,4 +1,6 @@
 # Monitoring-in-a-click
+## Description:
+This app deploys two containers - Grafana and Prometheus, and integrates between the two.
 
 ## Initialization:
 Using Bash, please run the file `init.sh`
