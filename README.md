@@ -1,6 +1,6 @@
 # Monitoring-in-a-click
 
-## Initiation:
+## Initialization:
 Using Bash, please run the file `init.sh`
 > bash init.sh
 
