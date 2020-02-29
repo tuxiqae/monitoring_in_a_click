@@ -79,10 +79,6 @@ args = parser.parse_args()
 prom_formatted_ver = args.prometheus_version if args.prometheus_version == 'latest' or args.prometheus_version[0] == 'v' else 'v'+args.prometheus_version
 
 prom_run_args = ['--config.file=/etc/prometheus/prometheus.yml']
-#if prom_formatted_ver == 'latest' or (str(prom_formatted_ver[1]) == '2' and int(prom_formatted_ver[3]) > 7):
-#    prom_run_args.append('--storage.tsdb.retention.time='+str(args.retention)+'h')
-#else:
-#    prom_run_args.append('--storage.local.retention='+str(args.retention)+'h')
 
 if prom_formatted_ver == 'latest':
     prom_run_args.append('--storage.tsdb.retention.time='+str(args.retention)+'h')
